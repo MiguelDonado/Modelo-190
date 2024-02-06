@@ -23,7 +23,7 @@ def main():
             dni = check_match(dni_nombre_provincia_pattern, individuo, 1)
             if dni:
                 text_holding_base_and_retenciones = (
-                    text_holding_base_and_retenciones_pattern.search(individuo).group(1)
+                    text_holding_base_and_retenciones_pattern.search(individuo).group()
                 )
                 try:
                     bases_and_retenciones = base_and_retenciones_pattern.findall(
